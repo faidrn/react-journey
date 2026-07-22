@@ -4,17 +4,15 @@ import TwitterFollowCard from './TwitterFollowCard'
 
 export default function App() {
 
-    const kikobeats = { isFollowing: true, userName: 'kikobeats' }
-
     return (
         <section className="App">
-            <TwitterFollowCard {...kikobeats}> {/*Utilizando el operador de propagación (rest operator) para pasar propiedades*/}
+            <TwitterFollowCard userName="kikobeats"
+            >
                 Kikobeats Kikobeats
             </TwitterFollowCard>
 
             <TwitterFollowCard 
-                userName="pheralb" 
-                isFollowing={false} 
+                userName="pheralb"
             >
                 Pablo Hidalgo
             </TwitterFollowCard>
