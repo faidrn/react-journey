@@ -9,7 +9,10 @@ Recupera un hecho aleatorio de gatos de la primera API y muestra una imagen de u
 
 NOTAS:
 
-* No hagas una prueba tecnica sin linter
+1. Crear proyecto (pnpm create vite@lates) -> seleccionar vanilla / javascript si tienes que crear el punto de partida del proyecto
+2. Instalar el plugin de React (pnpm install @vitejs/plugin-react -E)
+3. Instalar react y react-dom (pnpm install react react-dom -E)
+4. No hagas una prueba tecnica sin linter (pnpm install standart -D)
 
 Avance
 https://www.youtube.com/watch?v=XYpadB4VadY
