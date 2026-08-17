@@ -5,6 +5,7 @@ const FollowMouse = () => {
   const [enabled, setEnabled] = useState(false) // Activar y desactivar el efecto de la bolita en el puntero
   const [position, setPosition] = useState({ x: 0, y: 0 }) // Posición de la bolita
 
+  // pointer move
   useEffect(() => {
     // el useEffect ayuda a controlar cuando se renderiza un efecto, no se hace siempre en el render, solo cuando se necesita
     // puedo usar useEffect para aplicar un cambio cadda vez que hago click
@@ -30,6 +31,15 @@ const FollowMouse = () => {
       // esto es importante para evitar fugas de memoria y comportamientos inesperados
       console.log('cleanup ')
       window.removeEventListener('pointermove', handleMove)
+    }
+  }, [enabled])
+
+  // change body clase
+  useEffect(() => {
+    document.body.classList.toggle('no-cursor', enabled)
+
+    return () => {
+      document.body.classList.remove('no-cursor')
     }
   }, [enabled])
 
