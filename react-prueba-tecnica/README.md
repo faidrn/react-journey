@@ -16,6 +16,5 @@ NOTAS:
 3. Instalar react y react-dom (pnpm install react react-dom -E)
 4. No hagas una prueba tecnica sin linter (pnpm install standart -D)
 
-Avance
-https://www.youtube.com/watch?v=XYpadB4VadY
-42:32
+https://www.youtube.com/watch?v=x-LcbVw99o8
+8:23
