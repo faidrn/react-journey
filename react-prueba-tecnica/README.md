@@ -17,4 +17,4 @@ NOTAS:
 4. No hagas una prueba tecnica sin linter (pnpm install standart -D)
 
 https://www.youtube.com/watch?v=x-LcbVw99o8
-8:23
+30:20
