@@ -16,7 +16,7 @@ const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact'
 // Opción 2: asincronismo
 export const getRandomFact = async () => {
     const res =  await fetch(CAT_ENDPOINT_RANDOM_FACT)
-    const data = await res.json()
+    const data = await res.json()   // Devuelve una Promise que se resuelve con el body de la respuesta parseado como JSON
     const { fact } = data
     return fact
 }
