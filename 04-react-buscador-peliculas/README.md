@@ -1,16 +1,23 @@
-# React + Vite
+## Enunciado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crea una aplicación para buscar películas
 
-Currently, two official plugins are available:
+API a usar:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- https://www.omdbapi.com
+- API_KEY: 4287ad07
 
-## React Compiler
+Requerimientos:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Necesita mostrar un input para buscar la película y un botón para buscar
+- Lista las películas encontradas y muestra el título, año y poster.
+- Haz que las películas se muestren en un grid responsive.
 
-## Expanding the ESLint configuration
+Primera iteración:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Evitar que se haga la misma búsqueda dos veces seguidas.
+- Haz que la búsqueda se haga automáticamente al escribir.
+- Evita que se haga la búsqueda continuamente al escribir (debounce)
+
+https://www.youtube.com/watch?v=GOEiMwDJ3lc
+3:50
